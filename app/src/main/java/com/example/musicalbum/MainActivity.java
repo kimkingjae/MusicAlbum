@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setTitle("노래 목록");
     }
 
-    public void play(View v) {
-        int id = v.getId();
+    public void play(View view) {
+        int id = view.getId();
         LinearLayout layout = (LinearLayout) findViewById(id);
         String tag = (String) layout.getTag();
         Intent it = new Intent(this, AudioImage.class);
